@@ -186,39 +186,47 @@ header nav ul li a:hover {
 .founders {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   gap: 10px;
   flex-wrap: wrap;
-  /* Para permitir que os fundadores se movam para a próxima linha em telas pequenas */
+  margin: 0; /* Garantir que não haja margens externas inesperadas */
 }
 
+/* Ajustando o alinhamento de cada item "founder" */
 .founder {
   text-align: center;
   max-width: 250px;
-  /* Limita a largura de cada item "founder" */
-  margin: 10 auto;
-  /* Centraliza cada bloco de fundador */
+  margin: 10px; /* Garantir que todos os itens tenham a mesma margem */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
 
+/* Ajustando as imagens dos fundadores */
 .founder img {
   border: 4px solid #294c5a;
   width: 150px;
   height: 150px;
   border-radius: 50%;
   object-fit: cover;
-  /* Garante que a imagem ocupe o espaço da área definida sem distorções */
+  margin-bottom: 15px; /* Espaçamento entre a imagem e o nome/descrição */
 }
 
+/* Descrição do fundador */
 .founder h3 {
-  margin-top: 15px;
+  margin-top: 10px;
   font-size: 1.2rem;
 }
 
 .founder p {
   font-size: 1rem;
   color: #bbb;
-  /* Cor mais suave para a descrição */
+  margin-top: 10px;
+  flex-grow: 1;
+  min-height: 60px;
 }
+
 
 /* Seção de Contato */
 .contacto {
