@@ -477,7 +477,3 @@ nav.open {
 .faq-question.open i {
   transform: rotate(180deg);
 }
-
-.faq-footer {
-  margin-top: 250px;
-}
